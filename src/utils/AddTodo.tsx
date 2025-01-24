@@ -10,7 +10,9 @@ export default function AddTodo({ onAddTodo }: AddTodoType) {
         <>
             <Input
                 value={title}
-                onChange={(e: HTMLInputElement) => setTitle(e.target.value)}
+                onChange={(e: React.ChangeEvent<HTMLInputElement>) =>
+                    setTitle(e.target.value)
+                }
                 placeholder="Add Todo"
                 style={{ width: '50%' }}
             />

@@ -79,9 +79,9 @@ const Header = () => {
     return (
         <div className="calendar-header">
             <div className="calendar-header-left">
-                <div className="calendar-header-icon">& lt; </div>
+                <div className="calendar-header-icon">&lt; </div>
                 <div className="calendar-header-value"> 2024 - 10 - 26 </div>
-                <div className="calendar-header-icon">& gt; </div>
+                <div className="calendar-header-icon">&gt; </div>
                 <button className="calendar-header-btn"> 今天 </button>
             </div>
         </div>
@@ -123,7 +123,11 @@ const Calendar = (props: CalendarProps) => {
 const App = () => {
     return (
         <div>
-            <Calendar value={dayjs()}> </Calendar>
+            <Calendar
+                value={dayjs('2023-11-08')}
+                className={'aaa'}
+                style={{ background: 'yellow' }}
+            ></Calendar>
         </div>
     );
 };
